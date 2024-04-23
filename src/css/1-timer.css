@@ -1,0 +1,88 @@
+body {
+  padding-top: 36px;
+  padding-left: 16px;
+}
+
+#datetime-picker {
+  margin-left: 156px;
+  width: 272px;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid #808080;
+  background: #fff;
+  transition: border 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+#datetime-picker:hover {
+  border: 1px solid #000;
+}
+
+#datetime-picker:active {
+  border: 1px solid #4e75ff;
+}
+
+#datetime-picker:disabled {
+  background-color: #cfcfcf;
+}
+
+button[data-start] {
+  padding: 8px 16px;
+  border-radius: 8px;
+  background: #4e75ff;
+  border: none;
+  cursor: pointer;
+
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+
+  transition: background-color 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+button[data-start]:hover {
+  background-color: #6c8cff;
+}
+
+button[data-start]:disabled {
+  background-color: #cfcfcf;
+  color: #989898;
+}
+
+.timer {
+  display: flex;
+  gap: 24px;
+  margin-top: 32px;
+  margin-left: 156px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  align-items: center;
+  border-radius: 12px;
+  padding: 10px;
+}
+
+.value {
+  color: #2e2f42;
+  font-family: Montserrat;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: 1.6px;
+}
+
+.label {
+  color: #2e2f42;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
